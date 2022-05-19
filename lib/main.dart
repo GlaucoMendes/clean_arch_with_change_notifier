@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Pilar Mobile Case',
       theme: AppTheme.light,
       home: const HomeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
