@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pilar_mobile_case/features/home/widgets/icon_button_widget.dart';
+import 'package:pilar_mobile_case/presentation/properties/properties_screen.dart';
+
+import 'widgets/icon_button_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -15,13 +17,7 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 32),
             child: Image.asset('assets/images/logo.webp'),
           ),
-          title: TabBar(
-            onTap: (index) {
-              if (index == 3) {
-                print('Show Dialog');
-              }
-            },
-            indicatorWeight: 3,
+          title: const TabBar(
             tabs: [
               TabIcon(icon: Icons.house),
               TabIcon(icon: Icons.handshake),
@@ -31,17 +27,9 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         body: TabBarView(children: [
-          Column(
-            children: [
-              const Text('Texto de teste'),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Botão'),
-              )
-            ],
-          ),
-          Text('Pagina 2'),
-          Text('Pagina 23'),
+          const PropertiesScreen(),
+          const Text('Pagina 2'),
+          const Text('Pagina 23'),
           Container(),
         ]),
         floatingActionButton: FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),

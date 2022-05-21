@@ -12,7 +12,10 @@ class AppTheme {
     tabBarTheme: TabBarTheme(
       labelColor: AppColors.primary,
       indicator: UnderlineTabIndicator(
-        borderSide: BorderSide(color: AppColors.primary),
+        borderSide: BorderSide(
+          color: AppColors.primary,
+          width: 2.5,
+        ),
       ),
     ),
   );
