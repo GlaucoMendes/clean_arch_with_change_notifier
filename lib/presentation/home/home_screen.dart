@@ -26,13 +26,15 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: TabBarView(children: [
-          const PropertiesScreen(),
-          const Text('Pagina 2'),
-          const Text('Pagina 23'),
-          Container(),
-        ]),
-        floatingActionButton: FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),
+        body: TabBarView(
+          physics: const NeverScrollableScrollPhysics(),
+          children: [
+            const PropertiesScreen(),
+            const Text('Pagina 2'),
+            const Text('Pagina 23'),
+            Container(),
+          ],
+        ),
       ),
     );
   }
