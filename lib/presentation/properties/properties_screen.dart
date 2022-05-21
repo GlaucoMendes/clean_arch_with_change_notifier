@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pilar_mobile_case/data/repositories/properties_repository_impl.dart';
+import 'package:pilar_mobile_case/domain/usercases/get_properties_usercase.dart';
 import 'package:pilar_mobile_case/presentation/properties/properties_states.dart';
 import 'package:pilar_mobile_case/presentation/properties/properties_store.dart';
 import 'package:pilar_mobile_case/presentation/properties/widgets/properties_card_widget.dart';
@@ -12,7 +13,7 @@ class PropertiesScreen extends StatefulWidget {
 }
 
 class _PropertiesScreenState extends State<PropertiesScreen> with AutomaticKeepAliveClientMixin<PropertiesScreen> {
-  final store = PropertiesStore(PropertiesRepositoryImpl());
+  final store = PropertiesStore(GetPropertiesUsecase(PropertiesRepositoryImpl()));
   @override
   void initState() {
     super.initState();
