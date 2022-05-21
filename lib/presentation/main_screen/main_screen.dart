@@ -3,8 +3,8 @@ import 'package:pilar_mobile_case/presentation/properties/properties_screen.dart
 
 import 'widgets/icon_button_widget.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class MainScreen extends StatelessWidget {
+  const MainScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
