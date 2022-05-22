@@ -50,9 +50,7 @@ class _PropertiesScreenState extends State<PropertiesScreen> with AutomaticKeepA
                       const SizedBox(width: 8),
                       Expanded(
                         flex: 3,
-                        child: OrderDropdownComponent(
-                          store: store,
-                        ),
+                        child: OrderDropdownComponent(store: store),
                       ),
                     ]),
                     const SizedBox(

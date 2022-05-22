@@ -42,6 +42,8 @@ class PropertiesStore extends ValueNotifier<PropertiesState> {
         return false;
       }).toList();
       value = SuccessPropertiesState(result);
+    } else {
+      value = SuccessPropertiesState(properties);
     }
   }
 

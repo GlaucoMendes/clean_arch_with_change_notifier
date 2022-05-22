@@ -15,7 +15,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^2.3.2
   http: ^0.13.4
-  device_preview: ^1.0.0
+  device_preview:
+    git:
+      url: https://github.com/monkeydaichan/flutter_device_preview.git
+      path: device_preview
 
 dev_dependencies:
   flutter_test:
