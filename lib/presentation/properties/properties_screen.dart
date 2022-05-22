@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pilar_mobile_case/data/repositories/properties_repository_impl.dart';
-import 'package:pilar_mobile_case/domain/usercases/get_properties_usercase.dart';
+import 'package:pilar_mobile_case/domain/usecases/get_properties_usercase.dart';
 import 'package:pilar_mobile_case/presentation/properties/components/order_dropdown_component.dart';
 import 'package:pilar_mobile_case/presentation/properties/components/search_text_field_component.dart';
 import 'package:pilar_mobile_case/presentation/properties/properties_states.dart';
@@ -26,8 +26,8 @@ class _PropertiesScreenState extends State<PropertiesScreen> with AutomaticKeepA
   Widget build(BuildContext context) {
     super.build(context);
 
-    return Center(
-      child: SingleChildScrollView(
+    return SingleChildScrollView(
+      child: Center(
         child: Padding(
           padding: const EdgeInsets.fromLTRB(8, 16, 8, 8),
           child: ValueListenableBuilder(
@@ -39,6 +39,7 @@ class _PropertiesScreenState extends State<PropertiesScreen> with AutomaticKeepA
               if (state is LoadingPropertiesState) {
                 return const CircularProgressIndicator();
               }
+
               if (state is SuccessPropertiesState) {
                 return Column(
                   children: [
