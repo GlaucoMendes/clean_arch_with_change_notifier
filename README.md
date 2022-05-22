@@ -1,16 +1,30 @@
-# pilar_mobile_case
+### Sobre
 
-A new Flutter project.
+Projeto em Flutter utilizando clean architecture, state pattern com ChangeNotifier, boas práticas e testes.
+- [State Pattern](https://refactoring.guru/pt-br/design-patterns/state "StatePattern"): Padrão utilizado no gerenciamento de estado.
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/ "Conventional Commits"): Padrão utilizado para commits do repositório.
+- [Flutter TDD Clean Architecture](https://github.com/ResoCoder/flutter-tdd-clean-architecture-course"): padrão do clean arch utilizado com algumas alterações.
+##### Estrutura de pastas
+```bash
+├── lib
+│   ├── domain
+│   │   ├── repositories
+│   │   ├── usecases
+│   ├── data
+│   │   ├── repositories
+│   │   ├── models
+│   ├── presentation
+│   │   ├── feature
+│   │   │   ├── widgets
+│   │   │   ├── components
+│   │   │   ├── feature_screen.dart
+│   │   │   ├── feature_states.dart
+│   │   │   ├── feature_store.dart
+│   │   ├── models
+│   ├── infra
+│   │   ├── theme
+│   │   ├── enums
+│   │   ├── utils
+```
+### Web Demo
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
