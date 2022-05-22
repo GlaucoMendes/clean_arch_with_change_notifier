@@ -9,7 +9,7 @@ class PropertiesRepositoryImpl implements PropertiesRepository {
   @override
   Future<List<PropertiesModel>> getProperties() async {
     final response = await client.get(Uri.parse('https://6287e15b7864d2883e8e64c0.mockapi.io/properties'));
-    final data = await json.decode(response.body) as List;
+    final data = await json.decode(utf8.decode(response.bodyBytes)) as List;
     final properties = data.map((e) => PropertiesModel.fromJson(e)).toList();
 
     return properties;

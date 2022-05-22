@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pilar_mobile_case/data/repositories/properties_repository_impl.dart';
 import 'package:pilar_mobile_case/domain/usercases/get_properties_usercase.dart';
+import 'package:pilar_mobile_case/presentation/properties/components/order_dropdown_component.dart';
+import 'package:pilar_mobile_case/presentation/properties/components/search_text_field_component.dart';
 import 'package:pilar_mobile_case/presentation/properties/properties_states.dart';
 import 'package:pilar_mobile_case/presentation/properties/properties_store.dart';
 import 'package:pilar_mobile_case/presentation/properties/widgets/properties_card_widget.dart';
@@ -27,7 +29,7 @@ class _PropertiesScreenState extends State<PropertiesScreen> with AutomaticKeepA
     return Center(
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.fromLTRB(8, 16, 8, 8),
           child: ValueListenableBuilder(
             valueListenable: store,
             builder: (_, state, __) {
@@ -40,30 +42,18 @@ class _PropertiesScreenState extends State<PropertiesScreen> with AutomaticKeepA
               if (state is SuccessPropertiesState) {
                 return Column(
                   children: [
-                    Row(children: const [
+                    Row(children: [
                       Expanded(
-                        child: SizedBox(
-                          child: TextField(
-                            decoration: InputDecoration(
-                              isDense: true,
-                              contentPadding: EdgeInsets.all(8),
-                              border: OutlineInputBorder(),
-                            ),
-                          ),
+                        flex: 5,
+                        child: SearchTextFieldComponent(store: store),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        flex: 3,
+                        child: OrderDropdownComponent(
+                          store: store,
                         ),
                       ),
-                      SizedBox(width: 8),
-                      Expanded(
-                        child: SizedBox(
-                          child: TextField(
-                            decoration: InputDecoration(
-                              isDense: true,
-                              contentPadding: EdgeInsets.all(8),
-                              border: OutlineInputBorder(),
-                            ),
-                          ),
-                        ),
-                      )
                     ]),
                     const SizedBox(
                       height: 32,
