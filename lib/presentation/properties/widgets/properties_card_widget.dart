@@ -33,8 +33,6 @@ class PropertiesCardWidget extends StatelessWidget {
               style: Theme.of(context).textTheme.titleMedium,
             ),
           ),
-          const SizedBox(height: 18),
-          const Spacer(),
           Padding(
             padding: const EdgeInsets.all(8),
             child: Column(

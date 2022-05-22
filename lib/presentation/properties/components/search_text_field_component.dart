@@ -9,7 +9,6 @@ class SearchTextFieldComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: const InputDecoration(
-        isDense: true,
         contentPadding: EdgeInsets.all(8),
         border: OutlineInputBorder(),
         hintText: 'endereço, cidade, nome ',

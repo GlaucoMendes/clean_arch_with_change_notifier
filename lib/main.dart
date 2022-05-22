@@ -1,10 +1,21 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pilar_mobile_case/infra/theme/app_theme.dart';
-
 import 'presentation/main_screen/main_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  if (kIsWeb) {
+    runApp(
+      DevicePreview(
+        enabled: !kReleaseMode,
+        builder: (context) => const MyApp(),
+        devices: [...Devices.android.all, ...Devices.ios.all],
+      ),
+    );
+  } else {
+    runApp(const MyApp());
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -17,6 +28,8 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.light,
       home: const MainScreen(),
       debugShowCheckedModeBanner: false,
+      useInheritedMediaQuery: true,
+      locale: DevicePreview.locale(context),
     );
   }
 }
