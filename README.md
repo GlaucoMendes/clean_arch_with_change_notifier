@@ -1,7 +1,7 @@
 ### Sobre
 
 Projeto em Flutter utilizando clean architecture, state pattern com ChangeNotifier, boas práticas e testes.
-- [State Pattern](https://refactoring.guru/pt-br/design-patterns/state "StatePattern"): Padrão utilizado no gerenciamento de estado.
+- [State Pattern](https://refactoring.guru/pt-br/design-patterns/state "StatePattern"): Padrão utilizado no gerenciamento de estado com ChangeNotifier.
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/ "Conventional Commits"): Padrão utilizado para commits do repositório.
 - [Flutter TDD Clean Architecture](https://github.com/ResoCoder/flutter-tdd-clean-architecture-course"): padrão do clean arch utilizado com algumas alterações.
 
