@@ -8,7 +8,6 @@ void main() {
   if (kIsWeb) {
     runApp(
       DevicePreview(
-        enabled: !kReleaseMode,
         builder: (context) => const MyApp(),
         devices: [...Devices.android.all, ...Devices.ios.all],
       ),
@@ -30,6 +29,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
     );
   }
 }

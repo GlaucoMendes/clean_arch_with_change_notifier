@@ -26,13 +26,13 @@ class MainScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: TabBarView(
-          physics: const NeverScrollableScrollPhysics(),
+        body: const TabBarView(
+          physics: NeverScrollableScrollPhysics(),
           children: [
-            const PropertiesScreen(),
-            const Text('Pagina 2'),
-            const Text('Pagina 23'),
-            Container(),
+            PropertiesScreen(),
+            Text('Pagina 2'),
+            Text('Pagina 3'),
+            Text('Pagina 4'),
           ],
         ),
       ),
