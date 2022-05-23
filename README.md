@@ -28,3 +28,4 @@ Projeto em Flutter utilizando clean architecture, state pattern com ChangeNotifi
 ```
 ### Web Demo
 
+https://clean-arch-changenotifier.web.app/#/
