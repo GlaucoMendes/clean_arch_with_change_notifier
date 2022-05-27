@@ -1,4 +1,4 @@
-import 'package:pilar_mobile_case/data/models/properties_model.dart';
+import 'package:clean_arch_change_notifier/data/models/properties_model.dart';
 
 abstract class PropertiesState {}
 

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
-import 'package:pilar_mobile_case/data/models/properties_model.dart';
-import 'package:pilar_mobile_case/domain/usecases/get_properties_usercase.dart';
-import 'package:pilar_mobile_case/infra/enums/order_by_enum.dart';
-import 'package:pilar_mobile_case/infra/utils/app_utils.dart';
-import 'package:pilar_mobile_case/presentation/properties/properties_states.dart';
+import 'package:clean_arch_change_notifier/data/models/properties_model.dart';
+import 'package:clean_arch_change_notifier/domain/usecases/get_properties_usercase.dart';
+import 'package:clean_arch_change_notifier/infra/enums/order_by_enum.dart';
+import 'package:clean_arch_change_notifier/infra/utils/app_utils.dart';
+import 'package:clean_arch_change_notifier/presentation/properties/properties_states.dart';
 
 class PropertiesStore extends ValueNotifier<PropertiesState> {
   final GetPropertiesUsecase getPropertiesUsecase;

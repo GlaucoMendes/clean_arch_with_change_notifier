@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pilar_mobile_case/presentation/properties/properties_screen.dart';
+import 'package:clean_arch_change_notifier/presentation/properties/properties_screen.dart';
 
 import 'widgets/icon_button_widget.dart';
 
@@ -14,8 +14,8 @@ class MainScreen extends StatelessWidget {
         appBar: AppBar(
           leadingWidth: 100,
           leading: Padding(
-            padding: const EdgeInsets.only(left: 32),
-            child: Image.asset('assets/images/logo.webp'),
+            padding: const EdgeInsets.only(left: 16),
+            child: Image.asset('assets/images/logo.png'),
           ),
           title: const TabBar(
             tabs: [

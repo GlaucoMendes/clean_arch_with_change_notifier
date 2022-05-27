@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:pilar_mobile_case/data/models/properties_model.dart';
-import 'package:pilar_mobile_case/domain/repositories/properties_repository.dart';
-import 'package:pilar_mobile_case/domain/usecases/get_properties_usercase.dart';
+import 'package:clean_arch_change_notifier/data/models/properties_model.dart';
+import 'package:clean_arch_change_notifier/domain/repositories/properties_repository.dart';
+import 'package:clean_arch_change_notifier/domain/usecases/get_properties_usercase.dart';
 
 class MockPropertiesRepository extends Mock implements PropertiesRepository {}
 

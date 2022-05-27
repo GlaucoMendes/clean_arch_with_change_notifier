@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:pilar_mobile_case/infra/enums/order_by_enum.dart';
-import 'package:pilar_mobile_case/presentation/properties/properties_store.dart';
+import 'package:clean_arch_change_notifier/infra/enums/order_by_enum.dart';
+import 'package:clean_arch_change_notifier/presentation/properties/properties_store.dart';
 
 class OrderDropdownComponent extends StatelessWidget {
   final PropertiesStore store;

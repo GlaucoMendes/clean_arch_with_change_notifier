@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pilar_mobile_case">
+    package="com.example.clean_arch_change_notifier">
    <application
-        android:label="pilar_mobile_case"
+        android:label="clean_arch_change_notifier"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

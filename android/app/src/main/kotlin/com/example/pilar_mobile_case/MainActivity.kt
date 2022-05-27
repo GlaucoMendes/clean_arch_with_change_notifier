@@ -1,4 +1,4 @@
-package com.example.pilar_mobile_case
+package com.example.clean_arch_change_notifier
 
 import io.flutter.embedding.android.FlutterActivity
 

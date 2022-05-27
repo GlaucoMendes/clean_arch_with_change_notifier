@@ -1,7 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:pilar_mobile_case/infra/theme/app_theme.dart';
+import 'package:clean_arch_change_notifier/infra/theme/app_theme.dart';
 import 'presentation/main_screen/main_screen.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pilar Mobile Case',
+      title: 'Clean Arch With Change Notifier',
       theme: AppTheme.light,
       home: const MainScreen(),
       debugShowCheckedModeBanner: false,

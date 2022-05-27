@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pilar_mobile_case/data/models/properties_model.dart';
+import 'package:clean_arch_change_notifier/data/models/properties_model.dart';
 
 class PropertiesCardWidget extends StatelessWidget {
   final PropertiesModel propertie;

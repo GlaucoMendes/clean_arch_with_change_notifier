@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:pilar_mobile_case/data/repositories/properties_repository_impl.dart';
-import 'package:pilar_mobile_case/domain/usecases/get_properties_usercase.dart';
-import 'package:pilar_mobile_case/presentation/properties/components/order_dropdown_component.dart';
-import 'package:pilar_mobile_case/presentation/properties/components/search_text_field_component.dart';
-import 'package:pilar_mobile_case/presentation/properties/properties_states.dart';
-import 'package:pilar_mobile_case/presentation/properties/properties_store.dart';
-import 'package:pilar_mobile_case/presentation/properties/widgets/properties_card_widget.dart';
+import 'package:clean_arch_change_notifier/data/repositories/properties_repository_impl.dart';
+import 'package:clean_arch_change_notifier/domain/usecases/get_properties_usercase.dart';
+import 'package:clean_arch_change_notifier/presentation/properties/components/order_dropdown_component.dart';
+import 'package:clean_arch_change_notifier/presentation/properties/components/search_text_field_component.dart';
+import 'package:clean_arch_change_notifier/presentation/properties/properties_states.dart';
+import 'package:clean_arch_change_notifier/presentation/properties/properties_store.dart';
+import 'package:clean_arch_change_notifier/presentation/properties/widgets/properties_card_widget.dart';
 
 class PropertiesScreen extends StatefulWidget {
   const PropertiesScreen({Key? key}) : super(key: key);
